@@ -1,424 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#8B4F6E">
-    <title>Begoña & Ángel - 3 de Abril de 2027</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-<!DOCTYPE html>
-<html lang="es">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fotos de nuestra boda 💍</title>
+  <meta name="theme-color" content="#8B4F6E">
+  <title>Begoña & Ángel - 3 de Abril de 2027</title>
 
   <style>
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fffaf7;
-      color: #4a3a35;
-      text-align: center;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #FDF8F5 0%, #F5F0EB 100%);
+      min-height: 100vh;
+      color: #4A3740;
+    }
+
+    .container {
+      max-width: 540px;
+      width: 100%;
+      margin: 0 auto;
+      background: white;
+      min-height: 100vh;
+      box-shadow: 0 0 25px rgba(0,0,0,0.08);
     }
 
     header {
-      padding: 45px 20px 30px;
-      background: #f7ebe5;
+      text-align: center;
+      padding: 45px 25px 35px;
+      background: linear-gradient(135deg, #F8E9EF, #FDF8F5);
+    }
+
+    .heart {
+      font-size: 42px;
+      margin-bottom: 12px;
     }
 
     h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-      font-weight: 500;
+      font-size: 34px;
+      font-weight: normal;
+      color: #8B4F6E;
+      margin-bottom: 10px;
     }
 
-    .fecha {
-      font-size: 18px;
-      margin-bottom: 8px;
+    .date {
+      font-size: 19px;
+      color: #765A65;
+      margin-bottom: 18px;
     }
 
-    .mensaje {
-      max-width: 600px;
-      margin: 15px auto 0;
+    .intro {
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 30px 25px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #8B4F6E;
+      font-size: 25px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .section p {
       line-height: 1.6;
+      color: #66545C;
     }
 
-    .subir {
-      margin: 30px auto;
+    .upload-box {
+      margin-top: 22px;
       padding: 25px 20px;
-      max-width: 600px;
-      background: white;
+      border: 2px dashed #D6B7C6;
       border-radius: 18px;
-      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      background: #FFF9FB;
     }
 
     input[type="file"] {
       width: 100%;
-      padding: 12px;
-      margin-top: 15px;
+      margin: 15px 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
     }
 
     button {
-      margin-top: 15px;
-      padding: 12px 24px;
+      background: #8B4F6E;
+      color: white;
       border: none;
       border-radius: 25px;
-      background: #b98f7c;
-      color: white;
+      padding: 13px 28px;
       font-size: 16px;
       cursor: pointer;
-   
-        body {
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, #FDF8F5 0%, #F5F0EB 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+      font-family: Georgia, serif;
+    }
 
-        .container {
-            max-width: 540px;
-            width: 100%;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(139, 79, 110, 0.15);
-            overflow: hidden;
-        }
+    button:active {
+      transform: scale(0.98);
+    }
 
-        .header {
-            background: linear-gradient(135deg, #8B4F6E 0%, #A855A0 100%);
-            padding: 40px 20px;
-            text-align: center;
-            color: white;
-        }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
 
-        .header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            font-weight: 300;
-            letter-spacing: 2px;
-        }
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
 
-        .divider {
-            font-size: 28px;
-            margin: 15px 0;
-            animation: pulse 2s ease-in-out infinite;
-        }
+    .message {
+      margin-top: 25px;
+      padding: 22px;
+      background: #F8E9EF;
+      border-radius: 16px;
+      line-height: 1.7;
+      text-align: center;
+    }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
+    footer {
+      text-align: center;
+      padding: 30px 20px 45px;
+      color: #8B727D;
+      font-size: 14px;
+    }
 
-        .date {
-            font-size: 16px;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 29px;
+      }
 
-        .content {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .welcome-message {
-            background: rgba(139, 79, 110, 0.05);
-            border-left: 4px solid #8B4F6E;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            line-height: 1.6;
-            color: #555;
-            font-family: 'Segoe UI', sans-serif;
-            font-size: 14px;
-        }
-
-        .upload-btn {
-            background: linear-gradient(135deg, #8B4F6E 0%, #A855A0 100%);
-            color: white;
-            border: none;
-            padding: 20px 30px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            width: 100%;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(139, 79, 110, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .upload-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(139, 79, 110, 0.4);
-        }
-
-        .upload-btn:active {
-            transform: translateY(-1px);
-        }
-
-        .gallery-btn {
-            background: white;
-            color: #8B4F6E;
-            border: 2px solid #8B4F6E;
-            padding: 16px 30px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            width: 100%;
-            transition: all 0.3s ease;
-        }
-
-        .gallery-btn:hover {
-            background: #8B4F6E;
-            color: white;
-        }
-
-        #fileInput {
-            display: none;
-        }
-
-        .preview-section {
-            margin-top: 30px;
-            display: none;
-        }
-
-        .preview-section.show {
-            display: block;
-        }
-
-        .preview-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #8B4F6E;
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        .preview-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .preview-item {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            aspect-ratio: 1;
-            background: #f0f0f0;
-        }
-
-        .preview-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .preview-actions {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .btn-secondary {
-            background: white;
-            color: #8B4F6E;
-            border: 2px solid #8B4F6E;
-            padding: 12px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background: #8B4F6E;
-            color: white;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #8B4F6E 0%, #A855A0 100%);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(139, 79, 110, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 79, 110, 0.4);
-        }
-
-        .file-count {
-            color: #A855A0;
-            font-weight: 600;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #999;
-            font-size: 12px;
-            border-top: 1px solid #f0f0f0;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        @media (max-width: 480px) {
-            .header {
-                padding: 30px 15px;
-            }
-
-            .header h1 {
-                font-size: 36px;
-            }
-
-            .content {
-                padding: 25px 15px;
-            }
-
-            .preview-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-    </style>
+      .gallery {
+        gap: 8px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- ENCABEZADO -->
-        <div class="header">
-            <h1>Begoña & Ángel</h1>
-            <div class="divider">💕</div>
-            <div class="date">3 de Abril de 2027</div>
-        </div>
 
-        <!-- CONTENIDO -->
-        <div class="content">
-            <!-- MENSAJE DE BIENVENIDA -->
-            <div class="welcome-message">
-                <p>¡Hola! Nos encanta que seas parte de nuestro gran día. Comparte tus mejores fotos y vídeos de la boda. Todas las fotos quedarán guardadas aquí para que podamos revivirlas juntos. 📸</p>
-            </div>
+  <div class="container">
 
-            <!-- BOTÓN DE SUBIDA -->
-            <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
-                <span>📸</span>
-                <span>Subir Fotos</span>
-            </button>
+    <header>
+      <div class="heart">💍</div>
 
-            <!-- INPUT OCULTO -->
-            <input type="file" id="fileInput" multiple accept="image/*,video/*" onchange="handleFileSelect(event)">
+      <h1>Begoña & Ángel</h1>
 
-            <!-- SECCIÓN DE VISTA PREVIA -->
-            <div class="preview-section" id="previewSection">
-                <div class="file-count" id="fileCount"></div>
-                <div class="preview-title">Vista previa:</div>
-                <div class="preview-grid" id="previewGrid"></div>
-                <div class="preview-actions">
-                    <button class="btn-secondary" onclick="clearPreview()">Cancelar</button>
-                    <button class="btn-primary" onclick="sendPhotos()">Enviar Fotos</button>
-                </div>
-            </div>
+      <div class="date">
+        3 de Abril de 2027
+      </div>
 
-            <!-- BOTÓN VER GALERÍA -->
-            <button class="gallery-btn" onclick="alert('La galería estará disponible pronto 🎉')">
-                👀 Ver Galería
-            </button>
-        </div>
+      <div class="intro">
+        <p>
+          ¡Bienvenidos a nuestra boda! ❤️
+        </p>
 
-        <!-- PIE DE PÁGINA -->
-        <div class="footer">
-            <p>🎉 Hecho con 💕 para nuestra boda</p>
-        </div>
-    </div>
+        <p style="margin-top: 12px;">
+          Queremos que todos los recuerdos de este día
+          formen parte de nuestra historia.
+        </p>
+      </div>
+    </header>
 
-    <script>
-        let selectedFiles = [];
+    <section class="section">
 
-        function handleFileSelect(event) {
-            selectedFiles = Array.from(event.target.files);
-            
-            if (selectedFiles.length === 0) return;
+      <h2>📸 Comparte tus fotos</h2>
 
-            showPreview();
+      <p>
+        Selecciona las fotografías que quieras compartir
+        con nosotros.
+      </p>
+
+      <div class="upload-box">
+
+        <input
+          type="file"
+          id="photoInput"
+          accept="image/*"
+          multiple
+        >
+
+        <br>
+
+        <button onclick="addPhotos()">
+          Añadir fotos ❤️
+        </button>
+
+      </div>
+
+      <div id="gallery" class="gallery"></div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="message">
+        <strong>Gracias por acompañarnos</strong>
+
+        <p style="margin-top: 10px;">
+          Cada foto, cada sonrisa y cada momento
+          hará que podamos revivir este día
+          una y otra vez.
+        </p>
+      </div>
+
+    </section>
+
+    <footer>
+      Begoña & Ángel · 03.04.2027 💕
+    </footer>
+
+  </div>
+
+  <script>
+    function addPhotos() {
+
+      const input = document.getElementById("photoInput");
+      const gallery = document.getElementById("gallery");
+
+      if (!input.files.length) {
+        alert("Selecciona alguna foto primero 📸");
+        return;
+      }
+
+      Array.from(input.files).forEach(function(file) {
+
+        if (!file.type.startsWith("image/")) {
+          return;
         }
 
-        function showPreview() {
-            const previewSection = document.getElementById('previewSection');
-            const previewGrid = document.getElementById('previewGrid');
-            const fileCount = document.getElementById('fileCount');
+        const img = document.createElement("img");
 
-            previewGrid.innerHTML = '';
-            fileCount.textContent = `${selectedFiles.length} archivo${selectedFiles.length !== 1 ? 's' : ''} seleccionado${selectedFiles.length !== 1 ? 's' : ''}`;
+        img.src = URL.createObjectURL(file);
 
-            selectedFiles.forEach(file => {
-                const reader = new FileReader();
-                
-                reader.onload = (e) => {
-                    const div = document.createElement('div');
-                    div.className = 'preview-item';
-                    
-                    if (file.type.startsWith('video/')) {
-                        const video = document.createElement('video');
-                        video.src = e.target.result;
-                        video.style.width = '100%';
-                        video.style.height = '100%';
-                        video.style.objectFit = 'cover';
-                        div.appendChild(video);
-                    } else {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        div.appendChild(img);
-                    }
-                    
-                    previewGrid.appendChild(div);
-                };
-                
-                reader.readAsDataURL(file);
-            });
+        img.onload = function() {
+          URL.revokeObjectURL(img.src);
+        };
 
-            previewSection.classList.add('show');
-        }
+        gallery.appendChild(img);
 
-        function clearPreview() {
-            selectedFiles = [];
-            document.getElementById('fileInput').value = '';
-            document.getElementById('previewSection').classList.remove('show');
-        }
+      });
 
-        function sendPhotos() {
-            if (selectedFiles.length === 0) {
-                alert('Selecciona al menos una foto');
-                return;
-            }
+      input.value = "";
+    }
+  </script>
 
-            alert(`¡Gracias! Has seleccionado ${selectedFiles.length} archivo${selectedFiles.length !== 1 ? 's' : ''}.\n\nPronto estos archivos se enviarán cuando activemos el backend. 🎉`);
-        }
-    </script>
 </body>
 </html>
